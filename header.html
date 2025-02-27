@@ -1,144 +1,129 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technology Stack</title>
+    <title>Responsive Swiper Slider</title>
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
+    <!-- Font Awesome (for quote icon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </link>
+
+    <style>
+        .swiper {
+            width: 95vw;
+            max-width: 900px;
+            height: auto;
+        }
+
+        .swiper-slide {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 
-<body>
+<body class="bg-gray-100">
 
+    <section class="bg-gray-100 flex items-center justify-center min-h-screen p-6">
+        <div class="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-green-500 text-center animate-fade-in">
+                <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">
+                    CLIENT VOICES
+                </span>
+            </h2>
+            <p class="mt-2 text-lg text-gray-600 text-center animate-slide-up">
+                Hear what our satisfied clients have to say about their experience with Accubeans.
+            </p>
 
-    <!-- How We Work Section -->
-    <section class="bg-gray-50 text-gray-900">
-        <div class="max-w-5xl mx-auto px-6 py-12">
-            <!-- Heading -->
-            <div class="text-center">
-                <h6 class="flex items-center justify-center">How We Work</h6>
-                <h2 class="text-4xl font-extrabold flex items-center justify-center">
-                    <span class="relative">
-                        <span
-                            class="absolute -top-2 -left-4 w-10 h-10 bg-gradient-to-r from-blue-500 to-gray-400 rounded-full opacity-20"></span>
-                        Our Digital Marketing Process
-                    </span>
-                </h2>
-                <p class="flex items-center justify-center px-40 pt-4">
-                    A structured 6-step approach to maximize online presence, drive engagement, and generate leads
-                    effectively.
-                </p>
-            </div>
-
-            <!-- Grid Layout -->
-            <div class="mt-12 space-y-8">
-                <!-- Item 1: Market Research & Analysis -->
-                <div class="flex items-center space-x-6">
-                    <div
-                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
-                        <i class="fas fa-chart-line text-2xl" style="color: #4f7abf;"></i>
+            <!-- Swiper Container -->
+            <div class="swiper mySwiper mt-8 bg-white shadow-lg rounded-lg p-6 relative">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide flex flex-col items-center text-center p-6">
+                        <i class="fas fa-quote-left text-4xl text-gray-300"></i>
+                        <h3 class="text-lg sm:text-xl font-semibold mt-4">Amazing Job...</h3>
+                        <p class="text-sm sm:text-base text-gray-700 leading-relaxed mt-2">
+                            Kedar was always available, anticipated my needs and delivered top-quality work.
+                            He worked on time and very quickly! On top of that, he is a very nice person.
+                            I highly recommend him for any project. ⭐⭐⭐⭐⭐
+                        </p>
+                        <p class="mt-4 font-bold text-green-600">
+                            <span
+                                class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">
+                                - Katrina
+                            </span>
+                        </p>
                     </div>
-                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
-                    <div class="max-w-sm">
-                        <h3 class="font-bold text-lg">Market Research & Analysis</h3>
-                        <p class="text-gray-600 text-sm">
-                            Understanding target audience, industry trends, and competitors to create an effective
-                            strategy.
+
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide flex flex-col items-center text-center p-6">
+                        <i class="fas fa-quote-left text-4xl text-gray-300"></i>
+                        <h3 class="text-lg sm:text-xl font-semibold mt-4">Outstanding Work!</h3>
+                        <p class="text-sm sm:text-base text-gray-700 leading-relaxed mt-2">
+                            Accubeans always does amazing jobs for me. Kedar’s expertise in mobile app
+                            development is fantastic. I’ve been using his service for 2 years, and I am
+                            always happy with his work. ⭐⭐⭐⭐⭐
+                        </p>
+                        <p class="mt-4 font-bold text-green-600">
+                            <span
+                                class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">
+                                - Stanley
+                            </span>
+                        </p>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide flex flex-col items-center text-center p-6">
+                        <i class="fas fa-quote-left text-4xl text-gray-300"></i>
+                        <h3 class="text-lg sm:text-xl font-semibold mt-4">Great Experience!</h3>
+                        <p class="text-sm sm:text-base text-gray-700 leading-relaxed mt-2">
+                            We were impressed with Accubeans' professionalism and creativity.
+                            The flexibility in their approach was fantastic, and their on-time
+                            delivery made everything stress-free. ⭐⭐⭐⭐⭐
+                        </p>
+                        <p class="mt-4 font-bold text-green-600">
+                            <span
+                                class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">
+                                - S. Joshi
+                            </span>
                         </p>
                     </div>
                 </div>
 
-                <!-- Item 2: Content Strategy & Planning -->
-                <div class="flex items-center space-x-6">
-                    <div class="max-w-sm text-right">
-                        <h3 class="font-bold text-lg">Content Strategy & Planning</h3>
-                        <p class="text-gray-600 text-sm">
-                            Crafting valuable, relevant content (blogs, videos, social media) that resonates with the
-                            audience.
-                        </p>
-                    </div>
-                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
-                    <div
-                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
-                        <i class="fas fa-pen-nib  text-2xl" style="color: #4f7abf;"></i>
-                    </div>
-                </div>
-
-                <!-- Item 3: SEO & Website Optimization -->
-                <div class="flex items-center space-x-6">
-                    <div
-                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
-                        <i class="fas fa-search  text-2xl" style="color: #4f7abf;"></i>
-                    </div>
-                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
-                    <div class="max-w-sm">
-                        <h3 class="font-bold text-lg">SEO & Website Optimization</h3>
-                        <p class="text-gray-600 text-sm">
-                            Enhancing website structure, content, and performance to improve search rankings and user
-                            experience.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Item 4: Social Media & Paid Advertising -->
-                <div class="flex items-center space-x-6">
-                    <div class="max-w-sm text-right">
-                        <h3 class="font-bold text-lg">Social Media & Paid Advertising</h3>
-                        <p class="text-gray-600 text-sm">
-                            Running targeted ad campaigns on platforms like Facebook, Instagram, and Google Ads for
-                            maximum
-                            ROI.
-                        </p>
-                    </div>
-                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
-                    <div
-                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
-                        <i class="fas fa-bullhorn text-2xl" style="color: #4f7abf;"></i>
-                    </div>
-                </div>
-
-                <!-- Item 5: Analytics & Performance Tracking -->
-                <div class="flex items-center space-x-6">
-                    <div
-                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
-                        <i class="fas fa-chart-bar  text-2xl" style="color: #4f7abf;"></i>
-                    </div>
-                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
-                    <div class="max-w-sm">
-                        <h3 class="font-bold text-lg">Analytics & Performance Tracking</h3>
-                        <p class="text-gray-600 text-sm">
-                            Using tools like Google Analytics & Meta Business Suite to measure campaign success and
-                            optimize
-                            performance.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Item 6: Lead Generation & Conversion -->
-                <div class="flex items-center space-x-6">
-                    <div class="max-w-sm text-right">
-                        <h3 class="font-bold text-lg">Lead Generation & Conversion</h3>
-                        <p class="text-gray-600 text-sm">
-                            Implementing email marketing, retargeting ads, and CRO techniques to maximize conversions.
-                        </p>
-                    </div>
-                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
-                    <div
-                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
-                        <i class="fas fa-user-check  text-2xl" style="color: #4f7abf;"></i>
-                    </div>
-                </div>
+                <!-- Pagination Dots (Optional) -->
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Swiper Initialization -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new Swiper(".mySwiper", {
+                slidesPerView: 1, // Only one slide visible
+                spaceBetween: 10, // Small space between slides
+                loop: true, // Infinite looping
+                autoplay: {
+                    delay: 4000, // Change slide every 4 seconds
+                    disableOnInteraction: false, // Keeps autoplay active
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        });
+    </script>
 
 </body>
 

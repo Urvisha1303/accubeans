@@ -142,6 +142,18 @@ img {
   }
 }
 
+.swiper {
+    width: 95vw;
+    max-width: 900px;
+    height: auto;
+}
+
+.swiper-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
 .slider_p {
   width: 50%;
 }
@@ -675,12 +687,12 @@ p {
 
 .icon-group {
   transition: opacity 0.3s ease-in-out;
-  /* Add transition for smooth fade */
+  
 }
 
 .icon-group.hidden {
   opacity: 0;
-  /* Hide the icon group */
+  
   pointer-events: none;
-  /* Prevent hover effects when hidden */
+  /
 }
