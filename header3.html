@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Testimonials</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-green-500 text-center animate-fade-in">
+            CLIENT VOICES
+        </h2>
+        <p class="mt-2 text-lg text-gray-600 text-center animate-slide-up">
+            Hear what our satisfied clients have to say about their experience with Accubeans.
+        </p>
+
+        <!-- Swiper Container -->
+        <div class="swiper mySwiper mt-8 bg-white shadow-lg rounded-lg p-6 relative overflow-hidden">
+            <div class="swiper-wrapper">
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide flex flex-col items-center text-center p-6">
+                    <div class="w-full flex justify-start">
+                        <i class="fas fa-quote-left text-6xl text-gray-300 animate-fade-in"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mt-4">Amazing Job...</h3>
+                    <p class="text-base text-gray-700 leading-relaxed mt-2">
+                        Kedar was always available, anticipated my needs and delivered top-quality work.
+                        He worked on time and very quickly! On top of that, he is a very nice person.
+                        I highly recommend him for any project. ⭐⭐⭐⭐⭐
+                    </p>
+                    <p class="mt-4 font-bold text-green-600">- Katrina</p>
+                </div>
+
+
+
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide flex flex-col items-center text-center p-6">
+                    <div class="w-full flex justify-start">
+                        <i class="fas fa-quote-left text-6xl text-gray-300 animate-fade-in"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mt-4">Outstanding Work!</h3>
+                    <p class="text-base text-gray-700 leading-relaxed mt-2">
+                        Accubeans always does amazing jobs for me. Kedar’s expertise in mobile app
+                        development is fantastic. I’ve been using his service for 2 years, and I am
+                        always happy with his work. ⭐⭐⭐⭐⭐
+                    </p>
+                    <p class="mt-4 font-bold text-green-600">- Stanley</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="swiper-slide flex flex-col items-center text-center p-6">
+                    <div class="w-full flex justify-start">
+                        <i class="fas fa-quote-left text-6xl text-gray-300 animate-fade-in"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mt-4">Great Experience!</h3>
+                    <p class="text-base text-gray-700 leading-relaxed mt-2">
+                        We were impressed with Accubeans' professionalism and creativity.
+                        The flexibility in their approach was fantastic, and their on-time
+                        delivery made everything stress-free. ⭐⭐⭐⭐⭐
+                    </p>
+                    <p class="mt-4 font-bold text-green-600">- S. Joshi</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Swiper.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Swiper Initialization -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new Swiper(".mySwiper", {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                slidesPerView: 1,
+                spaceBetween: 20,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        });
+    </script>
+</body>
+
+</html>
