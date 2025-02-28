@@ -87,6 +87,8 @@
 
 * {
   font-family: "Open Sans";
+  margin: 0px;
+  padding: 0px;
 }
 
 main {
@@ -154,50 +156,13 @@ img {
     align-items: center;
 }
 
-.slider_p {
-  width: 50%;
-}
 
-.slider-container {
-  width: 50%;
-  overflow: hidden;
-  position: relative;
-  padding: 20px;
-  border-radius: 10px;
-  margin: auto;
-}
 
 .slider {
   display: flex;
   gap: 30px;
   width: max-content;
   animation: slide 12s linear infinite;
-}
-
-.slide {
-  flex: 0 0 auto;
-  width: 120px;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  border-radius: 60px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.slide img {
-  width: 70px;
-  height: 70px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.slide:hover {
-  transform: scale(1.2) rotate(10deg);
-}
-
-.slide:hover img {
-  transform: rotate(-10deg);
 }
 
 .static-data-container {
