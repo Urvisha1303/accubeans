@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accubeans Infotech</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-    <header id="sticky-header" class="bg-white fixed w-full top-0 z-50 transition-all duration-300">
+    <header id="sticky-header" class="bg-white fixed w-screen top-0 z-50 transition-all duration-300">
         <nav class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="flex items-center">
@@ -113,7 +113,7 @@
         <a href="getInTouch.html" class="text-gray-600 text-lg hover:text-blue-600 font-bold">Get In Touch</a>
     </div>
 
-    <section class="text-gray-600 body-font px-4 w-full mx-auto p-6 md:p-12 lg:p-14">
+    <section class="text-gray-600 body-font px-6  max-w-7xl mx-auto p-6 md:p-12 lg:p-14">
         <div class="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
             <div
                 class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -158,7 +158,6 @@
             </div>
             <div
                 class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                <h5 class="sm:text-sm mb-4 uppercase text-blue-500">WHO WE ARE</h5>
                 <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900" style="line-height: 1.4;">
                     We're a team of passionate tech enthusiasts dedicated to crafting tailored Web, Mobile, and Cloud
                     solutions with our
@@ -181,7 +180,7 @@
         </div>
     </section>
     <!-- all services -->
-    <div class="body">
+    <div class="allservices">
 
         <section class="w-11/12 max-w-6xl rounded-lg text-center relative z-10">
             <h2 class="text-3xl font-bold">Our <span
@@ -458,9 +457,6 @@
     <!-- let's work together -->
     <section class="consultation-section bg-black d-flex justify-center m-auto pb-16">
         <div class="consultation-content">
-            <h1 class="text-center text-xl font-bold pb-2 uppercase" style="color: var(--cornflower-blue)">Let's work
-                together
-            </h1>
             <h2 class=" text-2xl m-auto pb-8 text-center" style="color: var(--white)">Let's Discuss Your Project</h2>
             <p class="text-lg m-auto text-center pb-4" style="color: var(  --light-grey)">Get a free consultation and
                 let us
@@ -509,7 +505,10 @@
                             <i class="fas fa-laptop-code text-pink-600"></i>
                         </div>
                         <h2 class="text-xl font-bold text-gray-900">Software Development</h2>
-                        <i class="fas fa-arrow-up-right-from-square ml-auto text-gray-900"></i>
+
+                        <a class="ml-auto" href="softwearDevelopment.html">
+                            <i class="fas fa-arrow-up-right-from-square ml-auto text-gray-900"></i>
+                        </a>
                     </div>
                     <hr class="border-gray-300 mb-4">
                     <p class="text-gray-700">
@@ -525,7 +524,9 @@
                             <i class="fas fa-globe text-indigo-600"></i>
                         </div>
                         <h2 class="text-xl font-bold text-gray-900">Web Development</h2>
-                        <i class="fas fa-arrow-up-right-from-square ml-auto text-gray-900"></i>
+                        <a class="ml-auto" href="websiteDevelopment.html">
+                            <i class="fas fa-arrow-up-right-from-square ml-auto text-gray-900"></i>
+                        </a>
                     </div>
                     <hr class="border-gray-300 mb-4">
                     <p class="text-gray-700">
@@ -540,7 +541,9 @@
                             <i class="fas fa-mobile-alt text-yellow-600"></i>
                         </div>
                         <h2 class="text-xl font-bold text-gray-900">Mobile App Development</h2>
-                        <i class="fas fa-arrow-up-right-from-square ml-auto text-gray-900"></i>
+                        <a class="ml-auto" href="applicationDevelopment.html">
+                            <i class="fas fa-arrow-up-right-from-square ml-auto text-gray-900"></i>
+                        </a>
                     </div>
                     <hr class="border-gray-300 mb-4">
                     <p class="text-gray-700">
@@ -558,15 +561,16 @@
                         <div class="bg-teal-200 p-2 rounded-md mr-2">
                             <i class="fas fa-bug text-teal-600"></i>
                         </div>
-                        <h2 class="text-xl font-bold text-gray-900">QA & Testing</h2>
-                        <i class="fas fa-arrow-up-right-from-square ml-auto text-gray-900"></i>
+                        <h2 class="text-xl font-bold text-gray-900">Cloud Computing</h2>
+                        <a class="ml-auto" href="cloudComputing.html">
+                            <i class="fas fa-arrow-up-right-from-square ml-auto text-gray-900"></i>
+                        </a>
                     </div>
                     <hr class="border-gray-300 mb-4">
                     <p class="text-gray-700">
-                        Our QA testing services catch bugs before they reach your users. We ensure your software is
-                        reliable
-                        and
-                        performs flawlessly through manual & automated quality assurance protocols.
+                        We provide tailored software solutions to enhance business processes, improve efficiency, and
+                        drive digital
+                        transformation.
                     </p>
                 </div>
                 <div class="bg-purple-100 p-6 rounded-lg hover:bg-purple-200 transition duration-300">
@@ -574,15 +578,16 @@
                         <div class="bg-purple-200 p-2 rounded-md mr-2">
                             <i class="fas fa-paint-brush text-purple-600"></i>
                         </div>
-                        <h2 class="text-xl font-bold text-gray-900">UI/UX Design</h2>
-                        <i class="fas fa-arrow-up-right-from-square ml-auto text-gray-900"></i>
+                        <h2 class="text-xl font-bold text-gray-900">Digital Marketing</h2>
+                        <a class="ml-auto" href="digitalMarketing.html">
+                            <i class="fas fa-arrow-up-right-from-square ml-auto text-gray-900"></i>
+                        </a>
                     </div>
                     <hr class="border-gray-300 mb-4">
                     <p class="text-gray-700">
-                        We deliver UI UX solutions that transform user interactions with your website or app. Our
-                        designs
-                        are
-                        focused on usability and aesthetics, creating a seamless and engaging user experience.
+                        We drive business growth through innovative marketing strategies, data-driven insights, and
+                        targeted campaigns designed
+                        for success.
                     </p>
                 </div>
             </div>
@@ -593,11 +598,10 @@
 
     <!-- client section -->
     <section class="py-8 text-center bg-white">
-        <h2 class=" text-3xl font-bold" style="color: var( --darkestblue);">OUR <span
+        <h2 class=" text-3xl font-bold" style="color: var( --darkestblue);">Our <span
                 class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">Happy
                 Customers </span></h2>
-        <h1 class="text-sm font-semibold mt-2">Some of our Clients</h1>
-        <div class="flex flex-wrap justify-center items-center mt-8 space-x-8">
+        <div class="flex flex-wrap justify-center items-center mt-8 gap-4 space-x-8">
             <img alt="Client logo 1" class="h-24 hover:scale-110 transition-transform duration-300 "
                 src="https://storage.googleapis.com/a1aa/image/MaEfzS-_4fnBMs5Ufcud1IM2a-vMULDmoQx9dbihbdY.jpg" />
             <img alt="Client logo 2" class="h-24 hover:scale-110 transition-transform duration-300"
@@ -611,8 +615,8 @@
 
         </div>
         <div class="flex flex-col items-center mt-16">
-            <p class="text-2xl font-semibold">We <span class="font-bold">Promise</span>. We <span
-                    class="font-bold">Deliver</span>.</p>
+            <h2 class="text-2xl font-semibold">We <span class="font-bold">Promise</span>. We <span
+                    class="font-bold">Deliver</span>.</h2>
             <div class="flex justify-center mt-4">
                 <button
                     class="ml-4 font-bold relative inline-flex items-center bg-blue-300 py-3 px-10 rounded-xl before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-500 before:to-purple-500 before:w-0 hover:before:w-full before:transition-all before:duration-500 before:rounded-xl">
@@ -624,14 +628,14 @@
         </div>
     </section>
     <!-- testimonial -->
-    <section class="bg-gray-100 flex items-center justify-center min-h-screen p-6">
+    <section class="bg-black flex items-center justify-center p-6">
         <div class="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl sm:text-4xl font-bold text-green-500 text-center animate-fade-in">
                 <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">
-                    CLIENT VOICES
+                    Client Voices
                 </span>
             </h2>
-            <p class="mt-2 text-lg text-gray-600 text-center animate-slide-up">
+            <p class="mt-2 text-white text-lg text-gray-600 text-center animate-slide-up">
                 Hear what our satisfied clients have to say about their experience with Accubeans.
             </p>
 
@@ -775,11 +779,11 @@
     </section>
 
     <!-- subscribe -->
-    <section class="bg-gray-50 flex justify-center max-h-full p-24 h-full">
+    <section class="bg-gray-50 flex justify-center max-h-full p-6 sm:p-24 h-full">
         <div class="max-w-6xl mx-auto p-6 bg-white rounded-lg shadow-md">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
                 <div>
-                    <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">Get New Insights Weekly</h1>
+                    <h1 class="text-2xl sm:text-4xl font-bold text-gray-800 mb-4">Get New Insights Weekly</h1>
                     <p class="text-gray-500 mb-6">Subscribe to our newsletter and get the latest updates on digital
                         trends,
                         insights, and exclusive offers straight to your inbox.</p>
@@ -787,7 +791,7 @@
                 <div
                     class="flex flex-col sm:flex-row items-center bg-white rounded-full p-1 w-full shadow-[0_-6px_10px_rgba(0,0,255,0.4)]">
                     <input type="email" placeholder="Your email address"
-                        class="flex-grow p-4 text-gray-700 rounded-full focus:outline-none w-full sm:w-auto">
+                        class="flex-grow p-4 text-gray-700 rounded-full focus:outline-none w-auto sm:w-auto">
                     <button
                         class="bg-white text-gray-800 font-semibold py-2 px-6 rounded-full flex items-center mt-2 sm:mt-0 sm:ml-2">
                         Subscribe <i class="fas fa-arrow-right ml-2"></i>
@@ -799,144 +803,134 @@
 
 
     <!-- Footer Section -->
-    <section class=" flex items-center justify-center">
-        <footer class="bg-black text-white py-28 px-24">
-            <div class="container mx-auto px-4">
-                <div class="flex flex-wrap justify-between">
-                    <div class="w-full md:w-1/4 mb-6 md:mb-0">
-                        <p class="mb-4 text-white">
-                            We are AccuBeans – a team of precision-driven innovators who start working the moment we
-                            spot a tech challenge, ensuring
-                            the right solution every time
-                        </p>
-                        <a class="text-gray-400 hover:text-white" href="#">
-                            <i class="fab fa-linkedin fa-2x">
-                            </i>
-                        </a>
-                    </div>
-                    <div class="w-full md:w-1/4 mb-6 md:mb-0">
-                        <h3 class="font-bold mb-4">
-                            Company
-                        </h3>
-                        <ul>
-                            <li class="mb-2">
-                                <a class="text-gray-400 hover:text-white" href="#">
-                                    Company Overview
-                                </a>
-                            </li>
-                            <li class="mb-2">
-                                <a class="text-gray-400 hover:text-white" href="#">
-                                    Contact Us
-                                </a>
-                            </li>
-                            <li class="mb-2">
-                                <a class="text-gray-400 hover:text-white" href="#">
-                                    Careers
-                                </a>
-                            </li>
-                            <li class="mb-2">
-                                <a class="text-gray-400 hover:text-white" href="#">
-                                    Solutions
-                                </a>
-                            </li>
-                            <li class="mb-2">
-                                <a class="text-gray-400 hover:text-white" href="#">
-                                    Hire Team
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:w-1/4 mb-6 md:mb-0">
-                        <h3 class="font-bold mb-4">
-                            Service
-                        </h3>
-                        <ul>
-                            <li class="mb-2">
-                                <a class="text-gray-400 hover:text-white" href="websiteDevelopment.html">
-                                    Website Development
-                                </a>
-                            </li>
-                            <li class="mb-2">
-                                <a class="text-gray-400 hover:text-white" href="applicationDevelopment.html">
-                                    Application Development
-                                </a>
-                            </li>
-                            <li class="mb-2">
-                                <a class="text-gray-400 hover:text-white" href="cloudComputing.html">
-                                    Cloud Computing
-                                </a>
-                            </li>
-                            <li class="mb-2">
-                                <a class="text-gray-400 hover:text-white" href="softwearDevelopment.html">
-                                    Software Development
-                                </a>
-                            </li>
-                            <li class="mb-2">
-                                <a class="text-gray-400 hover:text-white" href="digitalMarketing.html">
-                                    Digital Marketing
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:w-1/4">
-                        <h3 class="font-bold mb-4">
-                            Contact Us
-                        </h3>
-                        <ul>
-                            <li class="mb-2 flex items-center">
-                                <i class="fas fa-envelope mr-2">
-                                </i>
-                                <a class="text-gray-400 hover:text-white"
-                                    href="mailto:bhadresh@prilancers-infotech.com">
-                                    getintouch@accubeans.com
-                                </a>
-                            </li>
-                            <li class="mb-2 flex items-center">
-                                <i class="fas fa-phone mr-2">
-                                </i>
-                                <a class="text-gray-400 hover:text-white" href="tel:+919106862019">
-                                    (+91) 9106862019
-                                </a>
-                            </li>
-                            <li class="mb-2 flex items-center">
-                                <i class="fas fa-map-marker-alt mr-2">
-                                </i>
-                                <span class="text-gray-400">
-                                    ACCUBEANS
-                                    55, Rameshwer Park, Opp. Avkar Hall, Maninagar, Ahmedabad-380008
-                                    Gujarat, INDIA.
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mt-10 border-t border-gray-700 pt-6 flex flex-wrap justify-between items-center">
-                    <p class="text-gray-400 text-sm">
-                        © accubeans 2025 | All rights reserved.
+    <footer class="flex items-center justify-center bg-black text-white py-12 px-6 sm:py-28 sm:px-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between">
+                <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                    <p class="mb-4 text-white">
+                        We are AccuBeans – a team of precision-driven innovators who start working the moment we spot a
+                        tech
+                        challenge, ensuring the right solution every time.
                     </p>
-                    <div class="flex items-center">
-                        <img alt="GoodFirms badge" class="mr-4" height="50"
-                            src="https://storage.googleapis.com/a1aa/image/f7DMf4Uwhl_i9f2vjZBM5VMZqNDQbVNXwvpIgdFYDso.jpg"
-                            width="50" />
-                        <img alt="Clutch badge" height="50"
-                            src="https://storage.googleapis.com/a1aa/image/QQnrs-FKizKy1Ho1lPlknCuO8X5Wi8BKTFb10R3TDlE.jpg"
-                            width="50" />
-                    </div>
-                    <div class="flex space-x-4 text-gray-400 text-sm">
-                        <a class="hover:text-white" href="#">
-                            Privacy Policy
-                        </a>
-                        <a class="hover:text-white" href="#">
-                            Faqs
-                        </a>
-                        <a class="hover:text-white" href="#">
-                            Terms
-                        </a>
-                    </div>
+                    <a class="text-gray-400 hover:text-white" href="#">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </div>
+                <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                    <h3 class="font-bold mb-4">
+                        Company
+                    </h3>
+                    <ul>
+                        <li class="mb-2">
+                            <a class="text-gray-400 hover:text-white" href="#">
+                                Company Overview
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-400 hover:text-white" href="#">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-400 hover:text-white" href="#">
+                                Careers
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-400 hover:text-white" href="#">
+                                Solutions
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-400 hover:text-white" href="#">
+                                Hire Team
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                    <h3 class="font-bold mb-4">
+                        Service
+                    </h3>
+                    <ul>
+                        <li class="mb-2">
+                            <a class="text-gray-400 hover:text-white" href="websiteDevelopment.html">
+                                Website Development
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-400 hover:text-white" href="applicationDevelopment.html">
+                                Application Development
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-400 hover:text-white" href="cloudComputing.html">
+                                Cloud Computing
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-400 hover:text-white" href="softwearDevelopment.html">
+                                Software Development
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-400 hover:text-white" href="digitalMarketing.html">
+                                Digital Marketing
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/4">
+                    <h3 class="font-bold mb-4">
+                        Contact Us
+                    </h3>
+                    <ul>
+                        <li class="mb-2 flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a class="text-gray-400 hover:text-white" href="mailto:getintouch@accubeans.com">
+                                getintouch@accubeans.com
+                            </a>
+                        </li>
+                        <li class="mb-2 flex items-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            <a class="text-gray-400 hover:text-white" href="tel:+919106862019">
+                                (+91) 9106862019
+                            </a>
+                        </li>
+                        <li class="mb-2 flex items-start">
+                            <i class="fas fa-map-marker-alt mr-2 mt-1"></i>
+                            <span class="text-gray-400">
+                                ACCUBEANS 55, Rameshwer Park, Opp. Avkar Hall, Maninagar, Ahmedabad-380008 Gujarat,
+                                INDIA.
+                            </span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-    </section>
+            <div class="mt-10 border-t border-gray-700 pt-6 flex flex-col sm:flex-row justify-between items-center">
+                <p class="text-gray-400 text-center mb-4 sm:mb-0">
+                    © accubeans 2025 | All rights reserved.
+                </p>
+                <div class="flex items-center mb-4 sm:mb-0">
+                    <img alt="GoodFirms badge" class="mr-2 h-10 w-10"
+                        src="https://storage.googleapis.com/a1aa/image/f7DMf4Uwhl_i9f2vjZBM5VMZqNDQbVNXwvpIgdFYDso.jpg" />
+                    <img alt="Clutch badge" class="h-10 w-10"
+                        src="https://storage.googleapis.com/a1aa/image/QQnrs-FKizKy1Ho1lPlknCuO8X5Wi8BKTFb10R3TDlE.jpg" />
+                </div>
+                <div class="flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-2 sm:space-y-0 text-gray-400">
+                    <a class="hover:text-white" href="#">
+                        Privacy Policy
+                    </a>
+                    <a class="hover:text-white" href="#">
+                        Faqs
+                    </a>
+                    <a class="hover:text-white" href="#">
+                        Terms
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
