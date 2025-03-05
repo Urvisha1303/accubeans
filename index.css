@@ -89,6 +89,10 @@
   font-family: "Poppins";
   margin: 0px;
   padding: 0px;
+  
+}
+.getInTouch{
+  background-color: #5273FF;
 }
 
 /* scrollbar */
@@ -294,6 +298,7 @@ img {
 .icon-container:hover {
   transform: scale(1.1);
 }
+
 
 .tabs {
   display: flex;
